@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  border: 1px solid red;
-  width: 100%;
-  height: 70rem;
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100vh;
   background-image: url(https://bilimneguzellan.net/wp-content/uploads/2016/08/s%C3%BCrpriz-1-800x445.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .navbar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   background-color: rgb(38, 38, 65);
 }
@@ -23,18 +23,16 @@ body {
 .navbar > ul li {
   /* border: 1px solid red; */
   background-color: rgb(65, 65, 151);
-  width: 200px;
+  width: 120px;
   height: 50px;
-  margin: 2rem;
-  padding: 0.7rem;
+  margin: 1rem;
+  padding: 0.1rem;
   border-radius: 20px;
 }
 .navbar ul li:hover {
   background-color: rgb(8, 8, 49);
 }
-.navbar ul li:hover a {
-  color: blueviolet;
-}
+
 a {
   text-decoration: none;
   color: white;
@@ -42,16 +40,18 @@ a {
 .navbar .fa-solid {
   margin: 0.5rem;
 }
-.iletisim {
+.acılır p {
   display: none;
 }
+.ilkli:hover .acılır p {
+  width: 120px;
+  height: 50px;
+  background-color: rgb(65, 65, 151);
+  color: white;
+  display: inline-block;
 
-.navbar ul li:hover .iletisim {
-  display: block;
+  border-radius: 10px;
 }
-.navbar .iletisim ul {
-  display: block;
-}
-.navbar .fa-solid:hover .fa-angle-up {
+.sonli:hover .fa-angle-up {
   transform: rotateX(180deg);
 }
